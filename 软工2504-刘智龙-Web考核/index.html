@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="清雾晚照，刘智龙的个人主页。武汉科技大学软件工程 2504 班学生，目标方向为 Java 后端开发。">
+  <meta name="theme-color" content="#0a0e14">
+  <title>清雾晚照 · 刘智龙 | JAVA 俱乐部招新考核</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- 页头与导航 -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="主导航">
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-name">清雾晚照</span>
+        <span class="brand-code">LLLowy</span>
+      </a>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换到浅色主题">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.7 6.7 0 0 0 9.8 9.8Z"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航菜单" aria-controls="navMenu" aria-expanded="false">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a class="nav-link active" href="#home">首页</a></li>
+        <li><a class="nav-link" href="#about">关于我</a></li>
+        <li><a class="nav-link" href="#plan">未来规划</a></li>
+        <li><a class="nav-link" href="#goals">学习目标</a></li>
+        <li><a class="nav-link" href="#contact">联系</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="mainContent">
+    <!-- Hero 首屏 -->
+    <section class="hero section-anchor" id="home" aria-labelledby="heroTitle">
+      <div class="hero-background" aria-hidden="true"></div>
+      <div class="container hero-layout">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">LLLowy / JAVA CLUB</p>
+          <h1 id="heroTitle">刘智龙</h1>
+          <p class="hero-subtitle">武汉科技大学 · 软件工程 2504 班 · 大二在读</p>
+          <p class="hero-tagline">清雾晚照——在代码里找节奏，在规划里找方向。</p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#plan">查看我的规划</a>
+            <a class="btn btn-secondary" href="https://github.com/LLLowy" target="_blank" rel="noopener noreferrer">访问 GitHub</a>
+          </div>
+        </div>
+
+        <div class="terminal-wrap" data-reveal>
+          <div class="terminal-card">
+            <div class="terminal-head">
+              <span class="window-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="terminal-title">LLLowy@wust — zsh</span>
+            </div>
+            <div class="terminal-body" id="terminalOutput" aria-label="个人简介终端"></div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about" aria-label="向下滚动到关于我">
+        <span>向下了解</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <path d="m6 9 6 6 6-6"></path>
+        </svg>
+      </a>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section section-anchor" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">01 / ABOUT ME</p>
+          <h2 id="aboutTitle">关于我</h2>
+          <p>身份背景、兴趣特点和真实技能经历。</p>
+        </div>
+
+        <div class="about-layout">
+          <article class="about-card" data-reveal>
+            <h3>身份与学习背景</h3>
+            <p>
+              我是刘智龙，武汉科技大学软件工程 2504 班学生，目前大二在读。
+              现在仍然处于打基础阶段，学习过 C 语言基础和 Java 基础，
+              正在自学 Web 与 Java 后端方向。
+            </p>
+
+            <h3>兴趣特点</h3>
+            <p>
+              我喜欢打篮球、玩 FPS 游戏，也喜欢做一些实用的小项目。
+              对我来说，兴趣不只是放松，也能帮助我保持专注、节奏感和动手欲。
+            </p>
+
+            <h3>技能经历</h3>
+            <p>
+              我使用过 Codex、DSH 等 AI Agent 工具辅助开发，能借助 AI 提高开发效率，
+              但核心逻辑仍然需要自己理解和实践。我参加过两次数学建模竞赛，均担任编程手。
+              在 GitHub 上有一个 JavaScript 小项目：任务笔记清单，参考番茄钟思路，
+              开发过程中使用了 DSH 辅助。
+            </p>
+          </article>
+
+          <aside class="info-card" data-reveal aria-label="个人信息">
+            <dl class="info-list">
+              <div class="info-row">
+                <dt>网名</dt>
+                <dd>清雾晚照</dd>
+              </div>
+              <div class="info-row">
+                <dt>学校</dt>
+                <dd>武汉科技大学</dd>
+              </div>
+              <div class="info-row">
+                <dt>班级</dt>
+                <dd>软件工程 2504 班</dd>
+              </div>
+              <div class="info-row">
+                <dt>专业</dt>
+                <dd>软件工程</dd>
+              </div>
+              <div class="info-row">
+                <dt>年级</dt>
+                <dd>大二在读</dd>
+              </div>
+              <div class="info-row">
+                <dt>目标方向</dt>
+                <dd>本科就业 · Java 后端开发</dd>
+              </div>
+            </dl>
+          </aside>
+        </div>
+
+        <!-- 技能标签页 -->
+        <div class="skills-area" data-stagger>
+          <div class="subsection-heading" data-reveal>
+            <h3>技能与工具</h3>
+            <p>如实展示当前学习阶段，不把基础夸大成精通。</p>
+          </div>
+
+          <div class="skills-tabs" data-skill-tabs>
+            <div class="tab-list" role="tablist" aria-label="技能分类">
+              <button class="tab-button active" id="skillTabLanguage" type="button" role="tab" aria-selected="true" aria-controls="skillPanelLanguage" data-skill-tab="language">编程语言</button>
+              <button class="tab-button" id="skillTabTools" type="button" role="tab" aria-selected="false" aria-controls="skillPanelTools" data-skill-tab="tools" tabindex="-1">工具链</button>
+              <button class="tab-button" id="skillTabLearning" type="button" role="tab" aria-selected="false" aria-controls="skillPanelLearning" data-skill-tab="learning" tabindex="-1">正在学习</button>
+            </div>
+
+            <div class="skill-panels">
+              <article class="skill-panel active" id="skillPanelLanguage" role="tabpanel" aria-labelledby="skillTabLanguage" data-skill-panel="language">
+                <div class="skill-panel-heading">
+                  <h3>编程语言</h3>
+                  <span>基础阶段 · 学习中</span>
+                </div>
+
+                <div class="skill-item" data-skill-item data-level="60">
+                  <div class="skill-meta">
+                    <strong>C 语言</strong>
+                    <span data-skill-number>60%</span>
+                  </div>
+                  <div class="skill-bar" role="progressbar" aria-label="C 语言学习进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60">
+                    <span class="skill-fill"></span>
+                  </div>
+                  <p>学习过基础语法、流程控制和编程思路。</p>
+                </div>
+
+                <div class="skill-item" data-skill-item data-level="55">
+                  <div class="skill-meta">
+                    <strong>Java</strong>
+                    <span data-skill-number>55%</span>
+                  </div>
+                  <div class="skill-bar" role="progressbar" aria-label="Java 学习进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+                    <span class="skill-fill"></span>
+                  </div>
+                  <p>学习过 Java 基础，正在继续理解面向对象和程序设计方法。</p>
+                </div>
+              </article>
+
+              <article class="skill-panel" id="skillPanelTools" role="tabpanel" aria-labelledby="skillTabTools" data-skill-panel="tools" aria-hidden="true">
+                <div class="skill-panel-heading">
+                  <h3>工具链</h3>
+                  <span>开发与数据处理工具</span>
+                </div>
+                <div class="tag-list" aria-label="工具链">
+                  <span class="tag">MATLAB</span>
+                  <span class="tag">Anaconda</span>
+                  <span class="tag">Git</span>
+                  <span class="tag">Codex</span>
+                  <span class="tag">DSH</span>
+                </div>
+                <p class="panel-note">
+                  在课程学习、数学建模竞赛和 GitHub 小项目中使用过这些工具，
+                  主要用于数据处理、可视化、代码管理与 AI 辅助开发。
+                </p>
+              </article>
+
+              <article class="skill-panel" id="skillPanelLearning" role="tabpanel" aria-labelledby="skillTabLearning" data-skill-panel="learning" aria-hidden="true">
+                <div class="skill-panel-heading">
+                  <h3>正在学习</h3>
+                  <span>学习中</span>
+                </div>
+                <div class="tag-list" aria-label="正在学习的技术">
+                  <span class="tag tag-warm">JavaScript</span>
+                  <span class="tag tag-warm">SQL</span>
+                  <span class="tag tag-warm">Spring Boot</span>
+                </div>
+                <p class="panel-note">
+                  当前重点是补足 Web 基础和数据库基础，再逐步进入 Spring Boot 后端开发。
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- 爱好 -->
+        <div class="hobbies-area" data-stagger>
+          <div class="subsection-heading" data-reveal>
+            <h3>兴趣爱好</h3>
+            <p>保持学习之外的节奏和行动力。</p>
+          </div>
+
+          <div class="hobby-grid">
+            <article class="hobby-card" data-reveal>
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path d="M4.2 7.4c4.4 1.2 8.8 4.7 11.5 10.8M7.4 4.2c1.2 4.4 4.7 8.8 10.8 11.5M3 12h18M12 3v18"></path>
+                </svg>
+              </span>
+              <h4>篮球</h4>
+              <p>喜欢球场上的节奏感和团队配合，也享受跑动与投篮的过程。</p>
+            </article>
+
+            <article class="hobby-card" data-reveal>
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <circle cx="12" cy="12" r="7"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                  <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+                </svg>
+              </span>
+              <h4>FPS 游戏</h4>
+              <p>喜欢快节奏对抗中的观察、反应与专注，也会总结自己的判断方式。</p>
+            </article>
+
+            <article class="hobby-card" data-reveal>
+              <span class="hobby-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                  <path d="M14.7 6.3a4.8 4.8 0 0 0-6.4 5.8L3 17.4a2.1 2.1 0 0 0 3 3l5.3-5.3a4.8 4.8 0 0 0 5.8-6.4l-3 3-2.4-2.4 3-3Z"></path>
+                  <path d="m6 18 1 1"></path>
+                </svg>
+              </span>
+              <h4>实用小项目</h4>
+              <p>喜欢把零散想法做成能实际使用的小工具，在动手过程中继续学习。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 竞赛经历 -->
+    <section class="section section-anchor competition-section" id="competitions" aria-labelledby="competitionsTitle">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">02 / COMPETITIONS</p>
+          <h2 id="competitionsTitle">竞赛经历</h2>
+          <p>两次数学建模竞赛中均担任编程手，负责模型实现与数据可视化。</p>
+        </div>
+
+        <div class="competition-grid" data-stagger>
+          <article class="competition-card" data-reveal>
+            <div class="competition-head">
+              <div>
+                <span class="competition-type">亚太数学建模竞赛</span>
+                <h3>三等奖</h3>
+              </div>
+              <span class="role-badge">编程手</span>
+            </div>
+
+            <dl class="competition-detail">
+              <div>
+                <dt>题目</dt>
+                <dd>基于多模型体系的美国互惠关税经济影响评估与政策效应研究</dd>
+              </div>
+              <div>
+                <dt>我的职责</dt>
+                <dd>负责编程实现与数据可视化，在 Anaconda 环境中结合 AI 辅助编程，完成模型结果的可视化呈现。</dd>
+              </div>
+              <div>
+                <dt>我的收获</dt>
+                <dd>提升了团队协作能力，进一步掌握把数学模型落地成可视化结果的方法，也积累了在时间压力下使用 AI 工具提高效率的经验。</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="competition-card" data-reveal>
+            <div class="competition-head">
+              <div>
+                <span class="competition-type">MathorCup 数学建模竞赛</span>
+                <h3>参与奖</h3>
+              </div>
+              <span class="role-badge role-badge-warm">编程手</span>
+            </div>
+
+            <dl class="competition-detail">
+              <div>
+                <dt>题目</dt>
+                <dd>基于中西医多维度数据的高血脂症风险预警与干预方案优化研究</dd>
+              </div>
+              <div>
+                <dt>我的职责</dt>
+                <dd>负责编程与数据可视化，配合建模手把模型结果转化为更加清晰的图表。</dd>
+              </div>
+              <div>
+                <dt>我的收获</dt>
+                <dd>加强了团队分工与协作意识，也提升了在有限时间内完成数据处理、图表呈现和结果表达的能力。</dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 未来规划：单方向深度展示 -->
+    <section class="section section-anchor plan-section" id="plan" aria-labelledby="planTitle">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">03 / FUTURE PLAN</p>
+          <h2 id="planTitle">未来规划</h2>
+          <p>本科就业方向已经明确，接下来重点是持续学习和积累真实项目经验。</p>
+        </div>
+
+        <div class="direction-banner" data-reveal>
+          <span>目标方向</span>
+          <h3>本科就业 · Java 后端开发</h3>
+          <p>以 Java 后端为主线，通过课程学习、完整项目、算法训练和实习逐步建立就业能力。</p>
+        </div>
+
+        <div class="plan-layout">
+          <aside class="plan-summary" data-reveal>
+            <h3>为什么选择这个方向</h3>
+            <ul class="reason-list">
+              <li>我更倾向于早点进入社会积累实战经验，不想继续读研。</li>
+              <li>通过 Java 基础和两次建模比赛的编程经历，我确认自己对后端开发有兴趣。</li>
+              <li>后端方向岗位需求稳定，也能把我目前学习的 Java 真正用起来。</li>
+            </ul>
+
+            <div class="choice-note">
+              <h4>为什么不考研</h4>
+              <p>
+                不是觉得考研不好，而是我判断自己更适合在真实项目中成长。
+                把时间投在实习和项目上，对我个人来说收益更大。
+              </p>
+            </div>
+          </aside>
+
+          <div class="plan-main" data-reveal>
+            <h3>阶段目标</h3>
+            <ol class="career-timeline">
+              <li>
+                <span>01</span>
+                <div>
+                  <h4>大二上（现在）</h4>
+                  <p>学完 Java 基础、JavaScript、SQL，打牢语法与基础。</p>
+                </div>
+              </li>
+              <li>
+                <span>02</span>
+                <div>
+                  <h4>大二寒假 ~ 大二下</h4>
+                  <p>入门 Spring Boot，能够独立搭起一个简单 Web 后端。</p>
+                </div>
+              </li>
+              <li>
+                <span>03</span>
+                <div>
+                  <h4>大二暑假（2027）</h4>
+                  <p>争取一段实习，小厂、创业公司或开源项目都可以，先接触真实工程流程。</p>
+                </div>
+              </li>
+              <li>
+                <span>04</span>
+                <div>
+                  <h4>大三（2027-2028）</h4>
+                  <p>主攻 Spring Boot、MySQL、Redis、Maven 技术栈，做一个完整项目，大三暑假冲刺正式实习。</p>
+                </div>
+              </li>
+              <li>
+                <span>05</span>
+                <div>
+                  <h4>大四</h4>
+                  <p>凭实习经历和项目经验，本科毕业拿到理想的 Java 后端 offer。</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="action-plan" data-reveal>
+          <h3>行动计划</h3>
+          <ol>
+            <li>这学期学完 Java 基础、JavaScript、SQL 和 Spring Boot 入门。</li>
+            <li>做出一个类似“苍穹外卖”级别的完整后端项目。</li>
+            <li>每周刷算法题 30 道，保持手感，为大三实习笔试做准备。</li>
+            <li>大二暑假争取一段实习，哪怕是小厂，先积累真实工程经验。</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 学习目标：折叠展开 -->
+    <section class="section section-anchor goals-section" id="goals" aria-labelledby="goalsTitle">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">04 / LEARNING GOALS</p>
+          <h2 id="goalsTitle">加入俱乐部想学什么</h2>
+          <p>把学习方向、目标和想参与的项目拆清楚，方便后续逐项完成。</p>
+        </div>
+
+        <div class="join-reason" data-reveal>
+          <h3>加入原因</h3>
+          <p>
+            一个人学容易松懈，和志同道合的同学一起学更有动力。希望在俱乐部里把 Java 能力
+            提升到能拿到实习的水平，也想认识能一起做项目的伙伴。
+          </p>
+        </div>
+
+        <div class="accordion" id="goalsAccordion">
+          <article class="accordion-item" data-accordion>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="goalPanelOne">
+              <span class="accordion-index">01</span>
+              <span class="accordion-title">Java 后端技术栈</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="accordion-content" id="goalPanelOne" role="region" aria-hidden="true">
+              <div class="accordion-inner">
+                <div class="goal-block">
+                  <h3>想学什么</h3>
+                  <p>Spring Boot、MySQL、Redis、Maven。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>具体目标</h3>
+                  <p>能够独立完成一个带数据库的 Web 后端项目。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>想参与的竞赛或项目</h3>
+                  <p>参与一个团队项目，从需求分析到部署走完整流程。</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion-item" data-accordion>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="goalPanelTwo">
+              <span class="accordion-index">02</span>
+              <span class="accordion-title">工程协作能力</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="accordion-content" id="goalPanelTwo" role="region" aria-hidden="true">
+              <div class="accordion-inner">
+                <div class="goal-block">
+                  <h3>想学什么</h3>
+                  <p>与同学组队做真实项目的协作流程。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>具体目标</h3>
+                  <p>参与一个团队项目，从需求分析到部署上线走完整流程。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>想参与的竞赛或项目</h3>
+                  <p>希望参与俱乐部内部项目或适合团队协作的软件类竞赛。</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="accordion-item" data-accordion>
+            <button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="goalPanelThree">
+              <span class="accordion-index">03</span>
+              <span class="accordion-title">竞赛与算法</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="m6 9 6 6 6-6"></path>
+              </svg>
+            </button>
+            <div class="accordion-content" id="goalPanelThree" role="region" aria-hidden="true">
+              <div class="accordion-inner">
+                <div class="goal-block">
+                  <h3>想学什么</h3>
+                  <p>通过算法训练提升编程思维和问题解决能力。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>具体目标</h3>
+                  <p>每周刷 30 道算法题，为实习笔试和后续竞赛打基础。</p>
+                </div>
+                <div class="goal-block">
+                  <h3>想参与的竞赛或项目</h3>
+                  <p>希望参与能够结合算法训练的项目或竞赛，为后续学习和实习笔试做准备。</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="section section-anchor contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker">05 / CONTACT</p>
+          <h2 id="contactTitle">联系方式</h2>
+          <p>如果需要进一步交流，可以通过以下方式联系我。</p>
+        </div>
+
+        <div class="contact-grid">
+          <button class="contact-card" id="qqCard" type="button" data-copy="809792615" aria-label="复制 QQ 号 809792615">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+                <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path>
+              </svg>
+            </span>
+            <span class="contact-label">QQ（点击复制）</span>
+            <strong class="contact-value">809792615</strong>
+          </button>
+
+          <a class="contact-card" href="mailto:809792615@qq.com">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                <path d="m3 7 9 6 9-6"></path>
+              </svg>
+            </span>
+            <span class="contact-label">邮箱</span>
+            <strong class="contact-value">809792615@qq.com</strong>
+          </a>
+
+          <a class="contact-card" href="https://github.com/LLLowy" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.7-1.6 6.7-7.4A5.8 5.8 0 0 0 19.2 3 5.4 5.4 0 0 0 19 0s-1.7-.5-5 2.5a12.5 12.5 0 0 0-6 0C4.7-.5 3 0 3 0a5.4 5.4 0 0 0-.2 3A5.8 5.8 0 0 0 1.3 7c0 5.8 3.4 7 6.7 7.4A4.8 4.8 0 0 0 7 18v4"></path>
+                <path d="M7 19c-3 .9-3-1.5-4.2-2"></path>
+              </svg>
+            </span>
+            <span class="contact-label">GitHub</span>
+            <strong class="contact-value">LLLowy</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>清雾晚照 · 刘智龙 · 武汉科技大学软件工程 2504 班 · 2026</p>
+      <p>© 2026 LLLowy.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="回到页面顶部">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+      <path d="m6 15 6-6 6 6"></path>
+    </svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="m20 6-11 11-5-5"></path>
+    </svg>
+    <span id="toastMessage">已复制 QQ 号，欢迎加好友</span>
+  </div>
+</body>
+</html>
